@@ -16,8 +16,7 @@ import HomeRouter from './routers/homeRouter';
 import Movie from './views/movie';
 import Discovery from './views/discovery';
 import My from './views/my';
-
-
+import Icon from 'react-native-vector-icons/Ionicons';
 const HOME_TAB = 'homeTab';
 const Movie_TAB = 'movieTab';
 const Discovery_TAB = 'discoveryTab';
@@ -80,35 +79,38 @@ export default class Main extends Component {
                 <TabBarIOS
                     tintColor="#11a984"
                     barTintColor="#FFFFFF">
-                    <TabBarIOS.Item
+                    <Icon.TabBarItem
                         title="首页"
-                        icon={require('../images/icon_home_nor.png')}
+                        iconName="ios-home-outline"
+                        selectedIconName="ios-home"
                         selected={this.state.selectedTab === HOME_TAB}
                         onPress={() => this.setTab(HOME_TAB)}>
                         {this._renderContent(HOME_TAB)}
-                    </TabBarIOS.Item>
-                    <TabBarIOS.Item
+                    </Icon.TabBarItem>
+                    <Icon.TabBarItem
                         title="影音"
-                        icon={require('../images/icon_home_nor.png')}
+                        iconName="ios-videocam-outline"
+                        selectedIconName="ios-videocam"
                         selected={this.state.selectedTab === Movie_TAB}
                         onPress={() => this.setTab(Movie_TAB)}>
                         {this._addNavigator(Movie,'影音')}
-                    </TabBarIOS.Item>
-
-                    <TabBarIOS.Item
+                    </Icon.TabBarItem>
+                    <Icon.TabBarItem
                         title="发现"
-                        icon={require('../images/icon_home_nor.png')}
+                        iconName="ios-compass-outline"
+                        selectedIconName="ios-compass"
                         selected={this.state.selectedTab === Discovery_TAB}
                         onPress={() => this.setTab(Discovery_TAB)}>
                         {this._addNavigator(Discovery,'发现')}
-                    </TabBarIOS.Item>
-                    <TabBarIOS.Item
+                    </Icon.TabBarItem>
+                    <Icon.TabBarItem
                         title="我的"
-                        icon={require('../images/icon_home_nor.png')}
+                        iconName="ios-person-outline"
+                        selectedIconName="ios-person"
                         selected={this.state.selectedTab === My_TAB}
                         onPress={() => this.setTab(My_TAB)}>
                         {this._addNavigator(My,'我的')}
-                    </TabBarIOS.Item>
+                    </Icon.TabBarItem>
                 </TabBarIOS>
             </View>
         )

@@ -20,23 +20,33 @@ import { get } from '../../utils/http'
 const ms = [{
     id:1,
     title:'aaaa',
-    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'}
+    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'},
+    star:45,
+    score:4.5
 },{
     id:2,
     title:'bbbb',
-    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'}
+    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'},
+    star:30,
+    score:7.5
 },{
     id:3,
     title:'cccc',
-    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'}
+    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'},
+    star:50,
+    score:8.8
 },{
     id:4,
     title:'cccc',
-    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'}
+    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'},
+    star:25,
+    score:9.9
 },{
     id:5,
     title:'cccc',
-    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'}
+    images:{small: 'http://img3.doubanio.com\/view\/movie_poster_cover\/lpst\/public\/p2397337958.jpg'},
+    star:35,
+    score:3.5
 }]
 
 

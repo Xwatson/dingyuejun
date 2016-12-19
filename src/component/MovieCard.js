@@ -34,7 +34,7 @@ export default class MovieCard extends React.Component {
                                 <View style={styles.cardContainer}>
                                     <Image style={{width:IMG_WIDTH,height:DOUBAN_IMG.height/DOUBAN_IMG.width*IMG_WIDTH}} source={{uri:item.images.small}}></Image>
                                     <Text style={styles.text}>{item.title}</Text>
-                                    <Stars style={styles.text} score={1} />
+                                    <Stars style={styles.text} star={item.star} score={item.score} />
                                 </View>
                             </TouchableHighlight>
                         )
