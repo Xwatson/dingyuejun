@@ -13,9 +13,9 @@ import {
     TouchableHighlight
 } from 'react-native'
 import Swiper from 'react-native-swiper'
-import Util from '../../utill/util'
+import Util from '../../utils/util'
 import MovieCard from '../../component/MovieCard'
-import { get } from '../../utill/http'
+import { get } from '../../utils/http'
 
 const ms = [{
     id:1,
